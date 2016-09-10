@@ -1,0 +1,167 @@
+body {
+	margin: 0; padding: 0;  
+	overflow: hidden;
+	color: #fff;
+	background: white;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 40 40px; 
+}
+a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; 
+}
+#wrap { 
+	position: relative;
+	top: 0;
+	transition: top 1.4s cubic-bezier(.49,.22,.52,1.35);
+}
+#nav {
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	padding: 1em 0;
+	margin: 0;
+	text-align: center;
+	background: #0E0B0B;
+}
+#nav li {
+	display: inline;
+	margin:0;
+}
+#nav a {
+	display: inline-block;
+	margin: 0 3em;
+	text-shadow: 0 0 5px #F165A4, 0 0 5px #F165A4, 0 0 5px #F165A4, 0 0 5px #F165A4;
+	transition: all 1s;
+}
+#slide1, #slide2, #slide3 {
+	height: 1000px;
+	padding-top: 50px;
+	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+#slide1 { 
+	background:url(images/fond-slide1.png) center 0 no-repeat fixed; 
+}
+#slide2 { 
+	background:url(images/fond-slide2.png) center 0 no-repeat fixed;
+}
+#slide3 { 
+	background:url(images/fond-slide3.png) center 0 no-repeat fixed; 
+}
+.slide_inside {
+	width: 770px;
+	margin: 0 auto;
+	position: relative;
+	background-color: rgba(0, 0, 0, .6);
+	padding: 50px;
+}
+
+#slide1 .slide_inside {
+	text-align: center;
+	width: 1200px;
+	height: 400px;
+	margin-top: 100px;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	position: absolute;
+}
+#slide2 .slide_inside {
+	margin-top: 85px;
+}
+#slide2 .slide_inside p {
+	width: 500px;
+	margin-top: 85px;
+	text-align: justify;
+}
+#slide3 .slide_inside {
+	width: 1200px;
+	height: 490px;
+	margin-top: 120px;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	position: absolute;
+}
+#slide3 .slide_inside h2 {
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+#s2:target ~ #wrap {
+	top:-1000px;
+}
+#s2 #slide1 { 
+	background-position: 50% 36%; 
+}
+#s2: #wrap #slide2 { 
+	background-position: 50% 0%; 
+}
+#s2: #wrap #slide3 { 
+	background-position: 50% -30%; 
+}
+#s1:target ~ #wrap { 
+	top:0px; 
+}
+#s1:target ~ #wrap #slide1 { 
+	background-position: 50% 0%; 
+}
+#s1:target ~ #wrap #slide2 { 
+	background-position: 50% -35%; 
+}
+#s1:target ~ #wrap #slide3 { 
+	background-position: 50% -60%; 
+}
+#s3:target ~ #wrap { 
+	top:-2150px; 
+}
+#s3:target ~ #wrap #slide1 { 
+	background-position: 50% 60%; 
+}
+#s3:target ~ #wrap #slide2 { 
+	background-position: 50% 35%; 
+}
+#s3:target ~ #wrap #slide3 { 
+	background-position: 50% 0%; 
+}
+ul {
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+	border-spacing:0;
+	list-style: none;
+}
+.ajout-image {
+	width: 900px;
+	height: 400px;
+	margin-left: 12.5%;
+	margin-top: 1%;
+	position: relative;
+	background: transparent url(images/2.jpg) center center;
+	background-size: 900px 400px;
+	border: 5px solid black;
+	box-shadow: 8px 8px 12px rgba(0,0,0,0.2);
+}
+.ajout-image:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,102,0,0.2)
+}
+.ajout-image li{
+	float:left;
+	position: relative;
+}
+.ajout-image li a, .ajout-image li a img{
+	display: block;
+	position: relative;
+}
+.ajout-image li a img{
+	width: 100px;
+	opacity: 0.3;
+}

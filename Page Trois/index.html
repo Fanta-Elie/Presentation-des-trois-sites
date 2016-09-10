@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Présentation du site Ting</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="js/jquery-v1.8.2.js"></script>
+	<script type="text/javascript" src="js/jquery-events-frame.js"></script>
+	<script type="text/javascript" src="js/jparallax.js"></script>
+	<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<span id="s1"></span>
+	<span id="s2"></span>
+	<span id="s3"></span>
+	<span id="s4"></span>
+	<div id="wrap">
+		<ul id="nav">  
+			<li><a href="#s1">Présentation de Ting.In</a></li>
+			<li><a href="#s2">Points forts</a></li>
+			<li><a href="#s3">Exemple Un</a></li>
+			<li><a href="#s4">Exemple Deux</a></li>
+			<li><a href="file:///C:/Users/ACER/Desktop/Dossier%20dev/exosimplon/Pr%C3%A9sentation%20site/Defi/Menu%20Principal/index.html">Menu Principal</a></li>
+		</ul>
+		<div id="slide1">
+			<div class="slide_inside">
+				<h1><a href="http://www.ting.in/"><img src="img/logo.png" alt="ting"></a></h1>
+				<h2>Le site Ting.in vous accueille !</h2>
+				<p>Ting.in est un site remplis d'article divers et variés dont la plupart sont animé de différentes manières.</p>
+			</div>	 	
+		</div> 
+		<div id="slide2">
+			<div class="slide_inside">
+				<h2>Points forts</h2>
+				<ol>
+					<li>Effet de parralax avec un mouseOver sur des images</li>
+					<li>Jolie petite galerie d'image animé en CSS et JS</li>
+				</ol>
+			</div> 	     	
+		</div>
+		<div id="slide3">
+			<div class="slide_inside">
+				<h2>Exemple Un</h2>
+				<div id="container">    
+					<div id="parallax" class="parallax-viewport">
+						<div class="parallax-layer parallax1"> 
+							<img src="img/img1.png" alt="">
+						</div>
+						<div class="parallax-layer parallax2">
+							<img src="img/img2.png" alt="">
+						</div>
+						<div class="parallax-layer parallax3">
+							<img src="img/img3.png" alt="">
+						</div>
+						<div class="parallax-layer parallax4">
+							<img src="img/img4.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div> 
+			<script type="text/javascript">
+			var get_height = window.innerHeight; 
+			var get_height1 =  get_height - 25;
+			var get_container = document.getElementById('container');
+			get_container.style.height =  get_height1 + 'px';
+			</script>	     	
+		</div>
+		<div id="slide4">
+			<div class="slide_inside">
+				<h2>Exemple Deux</h2>
+				<div class="gallery js-flickity">
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+				</div>
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+			</div>
+		</div>
+	</body>
+	</html>
